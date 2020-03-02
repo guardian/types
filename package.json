@@ -1,0 +1,22 @@
+{
+  "name": "types",
+  "version": "0.1.0",
+  "description": "A place for types",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guardian/types.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/guardian/types/issues"
+  },
+  "homepage": "https://github.com/guardian/types#readme",
+  "dependencies": {
+    "typescript": "^3.8.3"
+  }
+}
