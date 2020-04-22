@@ -23,6 +23,10 @@ function fromFormat({ pillar, design }: Format): ColourScheme {
         return ColourScheme.Opinion;
     }
 
+    if (design === Design.AdvertisementFeature) {
+        return ColourScheme.Labs;
+    }
+
     if (pillar === Pillar.Opinion) {
         return ColourScheme.Opinion;
     }
