@@ -22,6 +22,7 @@ const enum Design {
     GuardianView,
     Quiz,
     AdvertisementFeature,
+    Interactive
 }
 
 const enum Display {
