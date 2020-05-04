@@ -1,5 +1,5 @@
 {
-  "name": "types",
+  "name": "@guardian/types",
   "version": "0.2.0",
   "description": "A place for types",
   "main": "index.js",
