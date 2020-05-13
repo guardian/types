@@ -30,8 +30,7 @@ const enum Display {
     Immersive,
     Showcase,
     NumberedList,
-    Column,
-    PhotoEssay
+    Column
 }
 
 interface Format {
