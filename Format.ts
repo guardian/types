@@ -29,6 +29,9 @@ const enum Display {
     Standard,
     Immersive,
     Showcase,
+    NumberedList,
+    Column,
+    PhotoEssay
 }
 
 interface Format {
