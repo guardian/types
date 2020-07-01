@@ -74,6 +74,19 @@ const map = <A, B>(f: (a: A) => B) => (optA: Option<A>): Option<B> =>
     optA.kind === OptionKind.Some ? some(f(optA.value)) : none;
 
 /**
+ * Takes two Options and applies a function if both are `Some`,
+ * does nothing if either are a `None`.
+ * @param f The function to apply
+ * @param optA The first Option
+ * @param optB The second Option
+ * @returns {Option<C>} A new `Option`
+ */
+const map2 = <A, B, C>(f: (a: A, b: B) => C) => (optA: Option<A>) => (optB: Option<B>): Option<C> =>
+    optA.kind === OptionKind.Some && optB.kind === OptionKind.Some
+        ? some(f(optA.value, optB.value))
+        : none;
+
+/**
  * Like `map` but applies a function that *also* returns an `Option`.
  * Then "unwraps" the result for you so you don't end up with
  * `Option<Option<A>>`
@@ -100,5 +113,6 @@ export {
     fromNullable,
     withDefault,
     map,
+    map2,
     andThen,
 };
