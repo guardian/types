@@ -108,6 +108,7 @@ const andThen = <A, B>(f: (a: A) => Option<B>) => (optA: Option<A>): Option<B> =
 
 export {
     Option,
+    OptionKind,
     some,
     none,
     fromNullable,
