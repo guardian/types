@@ -4,7 +4,7 @@
   "description": "A place for types",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,13 @@
   "homepage": "https://github.com/guardian/types#readme",
   "dependencies": {
     "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.8",
+    "jest": "^26.2.2",
+    "ts-jest": "^26.1.4"
+  },
+  "jest": {
+    "preset": "ts-jest"
   }
 }
