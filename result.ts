@@ -134,6 +134,7 @@ const partition = <E, A>(results: Result<E, A>[]): Partitioned<E, A> =>
 
 export {
     Result,
+    ResultKind,
     ok,
     err,
     fromUnsafe,
