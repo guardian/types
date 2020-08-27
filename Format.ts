@@ -45,6 +45,7 @@ interface Format {
 export {
     Pillar,
     Design,
-    Display,
-    Format,
-}
+    Display
+};
+
+export type { Format };
