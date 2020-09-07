@@ -46,5 +46,6 @@ export {
     Pillar,
     Design,
     Display,
-    Format,
-}
+};
+
+export type { Format };
