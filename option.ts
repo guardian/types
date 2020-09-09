@@ -63,10 +63,10 @@ const withDefault = <A>(a: A) => (optA: Option<A>): A =>
  * const creditOne = some('Nicéphore Niépce');
  * // Returns Some('Photograph: Nicéphore Niépce')
  * map(name => `Photograph: ${name}`)(creditOne);
- * 
+ *
  * const creditTwo = none;
  * map(name => `Photograph: ${name}`)(creditTwo); // Returns None
- * 
+ *
  * // All together
  * compose(withDefault(''), map(name => `Photograph: ${name}`))(credit);
  */
@@ -96,7 +96,7 @@ const map2 = <A, B, C>(f: (a: A, b: B) => C) => (optA: Option<A>) => (optB: Opti
  * @example
  * type GetUser = number => Option<User>;
  * type GetUserName = User => Option<string>;
- * 
+ *
  * const userId = 1;
  * const username: Option<string> = compose(andThen(getUserName), getUser)(userId);
  */
@@ -107,7 +107,6 @@ const andThen = <A, B>(f: (a: A) => Option<B>) => (optA: Option<A>): Option<B> =
 // ----- Exports ----- //
 
 export {
-    Option,
     OptionKind,
     some,
     none,
@@ -117,3 +116,5 @@ export {
     map2,
     andThen,
 };
+
+export type { Option };

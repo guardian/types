@@ -1,6 +1,6 @@
 // ----- Types ----- //
 
-const enum Pillar {
+enum Pillar {
     News,
     Opinion,
     Sport,
@@ -8,7 +8,7 @@ const enum Pillar {
     Lifestyle,
 }
 
-const enum Design {
+enum Design {
     Article,
     Media,
     Review,
@@ -25,7 +25,7 @@ const enum Design {
     Interactive
 }
 
-const enum Display {
+enum Display {
     Standard,
     Immersive,
     Showcase,

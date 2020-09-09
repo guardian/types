@@ -57,7 +57,7 @@ function fromUnsafe<A, E>(f: () => A, error: E): Result<E, A> {
  * @param result The Result
  * @example
  * const flakyTaskResult: Result<string, number> = flakyTask(options);
- * 
+ *
  * either(
  *     data => `We got the data! Here it is: ${data}`,
  *     error => `Uh oh, an error: ${error}`,
@@ -100,7 +100,7 @@ const map = <A, B>(f: (a: A) => B) => <E>(result: Result<E, A>): Result<E, B> =>
  * @example
  * type RequestUser = number => Result<string, User>;
  * type GetEmail = User => Result<string, string>;
- * 
+ *
  * // Request fails: Err('Network failure')
  * // Request succeeds, problem accessing email: Err('Email field missing')
  * // Both succeed: Ok('email_address')
@@ -123,8 +123,8 @@ type Partitioned<E, A> = { errs: E[]; oks: A[] };
 const partition = <E, A>(results: Result<E, A>[]): Partitioned<E, A> =>
     results.reduce(({ errs, oks }: Partitioned<E, A>, result) =>
         either<E, A, Partitioned<E, A>>(
-            err => ({ errs: [ ...errs, err ], oks }),
-            ok => ({ errs, oks: [ ...oks, ok ] }),
+            err => ({ errs: [...errs, err], oks }),
+            ok => ({ errs, oks: [...oks, ok] }),
         )(result),
         { errs: [], oks: [] },
     );
@@ -133,7 +133,6 @@ const partition = <E, A>(results: Result<E, A>[]): Partitioned<E, A> =>
 // ----- Exports ----- //
 
 export {
-    Result,
     ResultKind,
     ok,
     err,
@@ -145,3 +144,5 @@ export {
     map,
     andThen,
 };
+
+export type { Result }
