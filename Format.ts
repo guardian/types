@@ -8,6 +8,12 @@ const enum Pillar {
     Lifestyle,
 }
 
+const enum Special {
+    SpecialReport,
+}
+
+type Theme = Pillar | Special;
+
 const enum Design {
     Article,
     Media,
@@ -34,7 +40,7 @@ const enum Display {
 }
 
 interface Format {
-    pillar: Pillar;
+    theme: Theme;
     design: Design;
     display: Display;
 }
