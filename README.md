@@ -23,3 +23,13 @@ $ yarn add -D @guardian/types
 ```
 $ npm test
 ```
+
+### Publish to NPM
+
+Bump the version in `package.json`.
+
+Publish the package:
+
+```
+$ npm publish --access public
+```
