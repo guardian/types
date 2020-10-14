@@ -1,12 +1,18 @@
 // ----- Types ----- //
 
 const enum Pillar {
-    News,
-    Opinion,
-    Sport,
-    Culture,
-    Lifestyle,
+    News = 0,
+    Opinion = 1,
+    Sport = 2,
+    Culture = 3,
+    Lifestyle = 4,
 }
+
+const enum Special {
+    SpecialReport = 5,
+}
+
+type Theme = Pillar | Special;
 
 const enum Design {
     Article,
@@ -34,7 +40,7 @@ const enum Display {
 }
 
 interface Format {
-    pillar: Pillar;
+    theme: Theme;
     design: Design;
     display: Display;
 }
