@@ -1,6 +1,6 @@
 {
   "name": "@guardian/types",
-  "version": "0.4.5",
+  "version": "0.5.0",
   "description": "A place for types",
   "main": "index.js",
   "scripts": {
