@@ -50,6 +50,7 @@ interface Format {
 
 export {
     Pillar,
+    Theme,
     Design,
     Display,
 };
