@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/guardian/types#readme",
   "dependencies": {
-    "typescript": "^3.8.3"
+    "typescript": "^3.9.7"
   },
   "devDependencies": {
     "@types/jest": "^26.0.8",
