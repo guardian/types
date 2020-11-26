@@ -2,7 +2,7 @@
   "name": "@guardian/types",
   "version": "0.5.2",
   "description": "A place for types",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "jest",
     "build": "tsc",
