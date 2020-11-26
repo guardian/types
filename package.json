@@ -6,7 +6,10 @@
   "scripts": {
     "test": "jest",
     "build": "tsc",
-    "prepare": "npm run build"
+    "dist": "npm run build && npm run dist:option && npm run dist:result",
+    "dist:option": "cp -r dist/option .",
+    "dist:result": "cp -r dist/result .",
+    "prepare": "npm run dist"
   },
   "repository": {
     "type": "git",
