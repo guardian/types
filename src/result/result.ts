@@ -1,6 +1,7 @@
 // ----- Imports ----- //
 
-import { Option, some, none } from './option';
+import type { Option } from '../option';
+import { some, none } from '../option';
 
 
 // ----- Types ----- //
@@ -133,7 +134,6 @@ const partition = <E, A>(results: Result<E, A>[]): Partitioned<E, A> =>
 // ----- Exports ----- //
 
 export {
-    Result,
     ResultKind,
     ok,
     err,
@@ -144,4 +144,8 @@ export {
     toOption,
     map,
     andThen,
+};
+
+export type {
+    Result,
 };
