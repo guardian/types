@@ -1,4 +1,4 @@
-node_modules
-dist
-option
-result
+node_modules/
+dist/
+option/
+result/
