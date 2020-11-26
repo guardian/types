@@ -13,3 +13,7 @@ export type {
     OphanProduct,
     TestMeta,
 } from './ophan';
+
+export {
+    Role,
+} from './role';
