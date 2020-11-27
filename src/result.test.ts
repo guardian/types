@@ -1,7 +1,7 @@
 // ----- Imports ----- //
 
 import { Result, ok, err, either, map, andThen, mapError, toOption } from './result';
-import { withDefault } from '../option';
+import { withDefault } from './option';
 
 
 // ----- Setup ----- //
