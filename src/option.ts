@@ -107,7 +107,6 @@ const andThen = <A, B>(f: (a: A) => Option<B>) => (optA: Option<A>): Option<B> =
 // ----- Exports ----- //
 
 export {
-    Option,
     OptionKind,
     some,
     none,
@@ -116,4 +115,8 @@ export {
     map,
     map2,
     andThen,
+};
+
+export type {
+    Option,
 };
