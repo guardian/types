@@ -1,6 +1,6 @@
 {
   "name": "@guardian/types",
-  "version": "0.5.2",
+  "version": "1.0.0",
   "description": "A place for types",
   "main": "dist/index.js",
   "scripts": {
