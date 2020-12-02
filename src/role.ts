@@ -12,6 +12,4 @@ const enum Role {
 
 // ----- Exports ----- //
 
-export {
-    Role,
-}
+export type { Role };

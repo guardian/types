@@ -28,7 +28,7 @@ const enum Design {
     GuardianView,
     Quiz,
     AdvertisementFeature,
-    Interactive
+    Interactive,
 }
 
 const enum Display {
@@ -36,7 +36,7 @@ const enum Display {
     Immersive,
     Showcase,
     NumberedList,
-    Column
+    Column,
 }
 
 interface Format {
@@ -45,15 +45,6 @@ interface Format {
     display: Display;
 }
 
-
 // ----- Exports ----- //
 
-export {
-    Pillar,
-    Special,
-    Theme,
-    Design,
-    Display,
-};
-
-export type { Format };
+export type { Pillar, Special, Theme, Design, Display, Format };

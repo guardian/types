@@ -8,17 +8,16 @@ const enum OptionKind {
 type Some<A> = {
     kind: OptionKind.Some;
     value: A;
-}
+};
 
 type None = {
     kind: OptionKind.None;
-}
+};
 
 /**
  * Represents a value that may or may not exist; it's either a Some or a None.
  */
 type Option<A> = Some<A> | None;
-
 
 // ----- Constructors ----- //
 
@@ -35,7 +34,6 @@ const none: None = { kind: OptionKind.None };
 const fromNullable = <A>(a: A | null | undefined): Option<A> =>
     a === null || a === undefined ? none : some(a);
 
-
 // ----- Functions ----- //
 
 /**
@@ -50,7 +48,7 @@ const fromNullable = <A>(a: A | null | undefined): Option<A> =>
  *
  * const bylineTwo = none;
  * withDefault('Jane Smith')(bylineTwo); // Returns 'Jane Smith'
-*/
+ */
 const withDefault = <A>(a: A) => (optA: Option<A>): A =>
     optA.kind === OptionKind.Some ? optA.value : a;
 
@@ -63,10 +61,10 @@ const withDefault = <A>(a: A) => (optA: Option<A>): A =>
  * const creditOne = some('Nicéphore Niépce');
  * // Returns Some('Photograph: Nicéphore Niépce')
  * map(name => `Photograph: ${name}`)(creditOne);
- * 
+ *
  * const creditTwo = none;
  * map(name => `Photograph: ${name}`)(creditTwo); // Returns None
- * 
+ *
  * // All together
  * compose(withDefault(''), map(name => `Photograph: ${name}`))(credit);
  */
@@ -81,7 +79,9 @@ const map = <A, B>(f: (a: A) => B) => (optA: Option<A>): Option<B> =>
  * @param optB The second Option
  * @returns {Option<C>} A new `Option`
  */
-const map2 = <A, B, C>(f: (a: A, b: B) => C) => (optA: Option<A>) => (optB: Option<B>): Option<C> =>
+const map2 = <A, B, C>(f: (a: A, b: B) => C) => (optA: Option<A>) => (
+    optB: Option<B>
+): Option<C> =>
     optA.kind === OptionKind.Some && optB.kind === OptionKind.Some
         ? some(f(optA.value, optB.value))
         : none;
@@ -96,13 +96,13 @@ const map2 = <A, B, C>(f: (a: A, b: B) => C) => (optA: Option<A>) => (optB: Opti
  * @example
  * type GetUser = number => Option<User>;
  * type GetUserName = User => Option<string>;
- * 
+ *
  * const userId = 1;
  * const username: Option<string> = compose(andThen(getUserName), getUser)(userId);
  */
-const andThen = <A, B>(f: (a: A) => Option<B>) => (optA: Option<A>): Option<B> =>
-    optA.kind === OptionKind.Some ? f(optA.value) : none;
-
+const andThen = <A, B>(f: (a: A) => Option<B>) => (
+    optA: Option<A>
+): Option<B> => (optA.kind === OptionKind.Some ? f(optA.value) : none);
 
 // ----- Exports ----- //
 
@@ -117,6 +117,4 @@ export {
     andThen,
 };
 
-export type {
-    Option,
-};
+export type { Option };

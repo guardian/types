@@ -1,7 +1,6 @@
 // ----- Types ----- //
 
-export type { Format } from './format';
-export { Pillar, Special, Theme, Design, Display } from './format';
+export type { Pillar, Special, Theme, Design, Display, Format } from "./format";
 
 export type {
     OphanABEvent,
@@ -12,13 +11,11 @@ export type {
     OphanComponentType,
     OphanProduct,
     TestMeta,
-} from './ophan';
+} from "./ophan";
 
-export {
-    Role,
-} from './role';
+export type { Role } from "./role";
 
-export type { Option } from './option';
+export type { Option } from "./option";
 export {
     OptionKind,
     some,
@@ -28,9 +25,9 @@ export {
     map,
     map2,
     andThen,
-} from './option';
+} from "./option";
 
-export type { Result } from './result';
+export type { Result } from "./result";
 export {
     ResultKind,
     ok,
@@ -42,4 +39,4 @@ export {
     toOption,
     map as resultMap,
     andThen as resultAndThen,
-} from './result';
+} from "./result";
