@@ -20,7 +20,9 @@
     "url": "https://github.com/guardian/types/issues"
   },
   "homepage": "https://github.com/guardian/types#readme",
-  "dependencies": {},
+  "peerDependencies": {
+    "typescript": "^3.8.0"
+  },
   "devDependencies": {
     "@guardian/eslint-config-typescript": "^0.4.1",
     "@guardian/prettier": "^0.4.1",
