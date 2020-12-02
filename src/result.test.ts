@@ -40,7 +40,7 @@ describe('map', () => {
 		expect(
 			pipe2(
 				mockErr,
-				map((a) => `Output: ${a}`),
+				map((a: number) => `Output: ${a}`),
 				either(identity, identity),
 			),
 		).toBe('message');
