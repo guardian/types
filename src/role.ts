@@ -1,17 +1,15 @@
 // ----- Types ----- //
 
 const enum Role {
-    Standard,
-    Immersive,
-    Supporting,
-    Showcase,
-    Inline,
-    Thumbnail,
-    HalfWidth,
+	Standard,
+	Immersive,
+	Supporting,
+	Showcase,
+	Inline,
+	Thumbnail,
+	HalfWidth,
 }
 
 // ----- Exports ----- //
 
-export {
-    Role,
-}
+export { Role };

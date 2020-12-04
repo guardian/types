@@ -6,6 +6,8 @@
   "scripts": {
     "test": "jest",
     "build": "tsc",
+    "lint": "eslint . --ext .js,.ts",
+    "fix": "eslint . --ext .js,.ts --fix",
     "prepare": "npm run build"
   },
   "repository": {
@@ -18,13 +20,24 @@
     "url": "https://github.com/guardian/types/issues"
   },
   "homepage": "https://github.com/guardian/types#readme",
-  "dependencies": {
-    "typescript": "^3.8.3"
+  "peerDependencies": {
+    "typescript": "^3.8.0"
   },
   "devDependencies": {
+    "@guardian/eslint-config-typescript": "^0.4.1",
+    "@guardian/prettier": "^0.4.1",
     "@types/jest": "^26.0.8",
+    "@typescript-eslint/eslint-plugin": "^4.9.0",
+    "@typescript-eslint/parser": "^4.9.0",
+    "eslint": "^7.14.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.1.4",
     "jest": "^26.2.2",
-    "ts-jest": "^26.1.4"
+    "prettier": "^2.2.1",
+    "ts-jest": "^26.1.4",
+    "typescript": "^3.9.7"
   },
   "jest": {
     "testPathIgnorePatterns": [
