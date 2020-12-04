@@ -1,6 +1,7 @@
 // ----- Types ----- //
 
-export type { Pillar, Special, Theme, Design, Display, Format } from './format';
+export type { Theme, Format } from './format';
+export { Pillar, Special, Design, Display } from './format';
 
 export type {
 	OphanABEvent,
@@ -13,7 +14,7 @@ export type {
 	TestMeta,
 } from './ophan';
 
-export type { Role } from './role';
+export { Role } from './role';
 
 export type { Option } from './option';
 export {
