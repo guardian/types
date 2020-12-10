@@ -47,6 +47,5 @@ interface Format {
 
 // ----- Exports ----- //
 
-export { Pillar, Special, Theme, Design, Display };
-
-export type { Format };
+export type { Theme, Format };
+export { Pillar, Special, Design, Display };

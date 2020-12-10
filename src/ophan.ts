@@ -87,7 +87,7 @@ type TestMeta = {
 	products?: OphanProduct[];
 };
 
-export {
+export type {
 	OphanABEvent,
 	OphanABPayload,
 	OphanAction,

@@ -1,7 +1,7 @@
 // ----- Types ----- //
 
-export type { Format } from './format';
-export { Pillar, Special, Theme, Design, Display } from './format';
+export type { Theme, Format } from './format';
+export { Pillar, Special, Design, Display } from './format';
 
 export type {
 	OphanABEvent,
