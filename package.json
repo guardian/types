@@ -9,7 +9,7 @@
     "lint": "eslint . --ext .js,.ts",
     "fix": "eslint . --ext .js,.ts --fix",
     "prepare": "npm run build",
-    "release": "np --preview"
+    "release": "np"
   },
   "repository": {
     "type": "git",
