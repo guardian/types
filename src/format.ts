@@ -26,6 +26,7 @@ const enum Design {
 	MatchReport,
 	Interview,
 	GuardianView,
+	GuardianLabs,
 	Quiz,
 	AdvertisementFeature,
 	Interactive,
