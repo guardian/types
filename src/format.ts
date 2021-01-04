@@ -29,6 +29,7 @@ const enum Design {
 	Quiz,
 	AdvertisementFeature,
 	Interactive,
+	PhotoEssay,
 }
 
 const enum Display {
