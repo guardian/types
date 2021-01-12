@@ -10,6 +10,7 @@ const enum Pillar {
 
 const enum Special {
 	SpecialReport = 5,
+	Labs = 6,
 }
 
 type Theme = Pillar | Special;
