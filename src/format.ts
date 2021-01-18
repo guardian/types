@@ -31,6 +31,7 @@ const enum Design {
 	AdvertisementFeature,
 	Interactive,
 	PhotoEssay,
+	PrintShop,
 }
 
 const enum Display {
