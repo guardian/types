@@ -1,6 +1,6 @@
 // ----- Types ----- //
 
-const enum Pillar {
+enum Pillar {
 	News = 0,
 	Opinion = 1,
 	Sport = 2,
@@ -8,14 +8,14 @@ const enum Pillar {
 	Lifestyle = 4,
 }
 
-const enum Special {
+enum Special {
 	SpecialReport = 5,
 	Labs = 6,
 }
 
 type Theme = Pillar | Special;
 
-const enum Design {
+enum Design {
 	Article,
 	Media,
 	Review,
@@ -33,7 +33,7 @@ const enum Design {
 	PhotoEssay,
 }
 
-const enum Display {
+enum Display {
 	Standard,
 	Immersive,
 	Showcase,

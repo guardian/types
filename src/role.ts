@@ -1,6 +1,6 @@
 // ----- Types ----- //
 
-const enum Role {
+enum Role {
 	Standard,
 	Immersive,
 	Supporting,

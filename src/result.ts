@@ -5,7 +5,7 @@ import { none, some } from './option';
 
 // ----- Types ----- //
 
-const enum ResultKind {
+enum ResultKind {
 	Ok,
 	Err,
 }
