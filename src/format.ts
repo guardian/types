@@ -28,7 +28,6 @@ const enum Design {
 	Interview,
 	GuardianView,
 	Quiz,
-	AdvertisementFeature,
 	Interactive,
 	PhotoEssay,
 }
