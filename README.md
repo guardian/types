@@ -26,10 +26,8 @@ $ npm test
 
 ### Publish to NPM
 
-Bump the version in `package.json`.
-
-Publish the package:
+We us the [np library](https://github.com/sindresorhus/np) to publish.
 
 ```
-$ npm publish --access public
+$ npm run release
 ```
