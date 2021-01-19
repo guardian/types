@@ -26,7 +26,7 @@ $ npm test
 
 ### Publish to NPM
 
-We us the [np library](https://github.com/sindresorhus/np) to publish.
+We use the [np library](https://github.com/sindresorhus/np) to publish.
 
 ```
 $ npm run release
