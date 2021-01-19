@@ -23,3 +23,11 @@ $ yarn add -D @guardian/types
 ```
 $ npm test
 ```
+
+### Publish to NPM
+
+We use the [np library](https://github.com/sindresorhus/np) to publish.
+
+```
+$ npm run release
+```
