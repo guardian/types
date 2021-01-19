@@ -1,6 +1,6 @@
 // ----- Types ----- //
 
-const enum OptionKind {
+enum OptionKind {
 	Some,
 	None,
 }
