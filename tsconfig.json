@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    // Enable strictest settings like strictNullChecks & noImplicitAny.
+    "strict": true,
+    // Import non-ES modules as default imports.
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "baseUrl": "src/",
+    // Prevents Linux/macOS inconsistencies
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "dist/",
+    // Also emit declaration files
+    "declaration": true
+  }
+}
