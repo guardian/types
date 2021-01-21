@@ -30,6 +30,7 @@ enum Design {
 	Quiz,
 	Interactive,
 	PhotoEssay,
+	PrintShop,
 }
 
 enum Display {
