@@ -21,6 +21,7 @@ enum Design {
 	Review,
 	Analysis,
 	Comment,
+	Letter,
 	Feature,
 	Live,
 	Recipe,
