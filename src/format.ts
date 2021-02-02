@@ -26,7 +26,7 @@ enum Design {
 	Recipe,
 	MatchReport,
 	Interview,
-	GuardianView,
+	Editorial,
 	Quiz,
 	Interactive,
 	PhotoEssay,
