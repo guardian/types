@@ -57,7 +57,8 @@ type OphanComponentType =
 	| 'ACQUISITIONS_SUBSCRIPTIONS_BANNER'
 	| 'ACQUISITIONS_OTHER'
 	| 'SIGN_IN_GATE'
-	| 'RETENTION_ENGAGEMENT_BANNER';
+	| 'RETENTION_ENGAGEMENT_BANNER'
+	| 'RETENTION_ENGAGEMENT_EPIC';
 
 type OphanComponent = {
 	componentType: OphanComponentType;
