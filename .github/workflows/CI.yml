@@ -9,15 +9,8 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v2
 
-      # based on https://github.com/actions/setup-node/issues/32#issuecomment-539794249
-      - name: Read .nvmrc
-        run: echo ::set-output name=NVMRC::$(cat .nvmrc)
-        id: nvm
-
       - name: Setup node
-        uses: actions/setup-node@v2.1.4
-        with:
-          node-version: '${{ steps.nvm.outputs.NVMRC }}'
+        uses: guardian/actions-setup-node
 
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
