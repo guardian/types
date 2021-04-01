@@ -40,7 +40,6 @@ enum Display {
 	Immersive,
 	Showcase,
 	NumberedList,
-	Column,
 }
 
 interface Format {
