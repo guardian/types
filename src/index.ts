@@ -1,6 +1,6 @@
 // ----- Types ----- //
 
-export type {Country, CountryCode} from './countries'
+export type { Country, CountryCode } from './countries';
 
 export type { Theme, Format } from './format';
 export { Pillar, Special, Design, Display } from './format';
