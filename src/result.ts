@@ -1,7 +1,7 @@
 // ----- Imports ----- //
 
-import type { Option } from './option';
 import { none, some } from './option';
+import type { Option } from './option';
 
 // ----- Types ----- //
 

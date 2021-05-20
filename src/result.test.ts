@@ -1,8 +1,8 @@
 // ----- Imports ----- //
 
 import { withDefault } from './option';
-import type { Result } from './result';
 import { andThen, either, err, map, mapError, ok, toOption } from './result';
+import type { Result } from './result';
 
 // ----- Setup ----- //
 
