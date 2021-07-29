@@ -1,5 +1,3 @@
-⚠️ **Deprecation warning: This package will soon be migrated to [guardian/libs](https://github.com/guardian/libs) and will be archived. **
-
 # types
 
 A place for types
