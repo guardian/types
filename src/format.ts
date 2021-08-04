@@ -34,6 +34,7 @@ enum Design {
 	PhotoEssay,
 	PrintShop,
 	Obituary,
+	Correction,
 }
 
 enum Display {
