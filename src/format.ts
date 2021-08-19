@@ -42,6 +42,7 @@ enum Display {
 	Immersive,
 	Showcase,
 	NumberedList,
+	InteractiveFullWidth,
 }
 
 interface Format {
