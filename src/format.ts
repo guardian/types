@@ -35,6 +35,7 @@ enum Design {
 	PrintShop,
 	Obituary,
 	Correction,
+	InteractiveFullWidth,
 }
 
 enum Display {
@@ -42,7 +43,6 @@ enum Display {
 	Immersive,
 	Showcase,
 	NumberedList,
-	InteractiveFullWidth,
 }
 
 interface Format {
