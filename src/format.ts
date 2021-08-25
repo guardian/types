@@ -35,7 +35,7 @@ enum Design {
 	PrintShop,
 	Obituary,
 	Correction,
-	InteractiveFullWidth,
+	FullWidthInteractive,
 }
 
 enum Display {
