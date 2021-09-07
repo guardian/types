@@ -1,23 +1,3 @@
-// ----- Types ----- //
-
-export type { Country, CountryCode } from './countries';
-
-export type { Theme, Format } from './format';
-export { Pillar, Special, Design, Display } from './format';
-
-export type {
-	OphanABEvent,
-	OphanABPayload,
-	OphanAction,
-	OphanComponent,
-	OphanComponentEvent,
-	OphanComponentType,
-	OphanProduct,
-	TestMeta,
-} from './ophan';
-
-export { Role } from './role';
-
 export type { Option } from './option';
 export {
 	OptionKind,
